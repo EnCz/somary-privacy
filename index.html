@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Datenschutzerklärung – SOMA</title>
+  <title>Datenschutzerklärung SOMA / Privacy Policy</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -18,84 +18,246 @@
     h2 { font-size: 1.2rem; margin-top: 40px; }
     p, ul { margin: 12px 0; }
     ul { padding-left: 20px; }
-    .muted { color: #9B9588; font-size: 0.9rem; }
+    .muted { color: #6F695E; font-size: 0.9rem; }
     a { color: #C84B2F; }
+    hr { border: none; border-top: 1px solid #D5CFC4; margin: 64px 0; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #121110; color: #F2EEE6; }
+      .muted { color: #ABA497; }
+      a { color: #E2643F; }
+      hr { border-top-color: #3A3631; }
+    }
   </style>
 </head>
 <body>
 
-  <h1>Datenschutzerklärung</h1>
-  <p class="muted">SOMA App · Stand: März 2026</p>
+  <p class="muted"><a href="#de">Deutsch</a> · <a href="#en">English</a></p>
+
+  <h1 id="de">Datenschutzerklärung</h1>
+  <p class="muted">SOMA App · Stand: 30. Oktober 2026</p>
 
   <h2>1. Verantwortlicher</h2>
   <p>
-    Enrico Czepan<br />
-    Kontakt: enrico.czepan@gmail.com
+    epicrisc, vertreten durch Enrico Czepan<br />
+    c/o Online-Impressum 12411<br />
+    Europaring 90<br />
+    53757 Sankt Augustin<br />
+    E-Mail: <a href="mailto:enrico.czepan@gmail.com">enrico.czepan@gmail.com</a><br />
+    Impressum: <a href="https://mein.online-impressum.de/epicrisc/">mein.online-impressum.de/epicrisc</a>
   </p>
 
-  <h2>2. Grundsatz: Lokale Datenspeicherung</h2>
-  <p>
-    SOMA speichert alle Daten ausschließlich lokal auf deinem Gerät.
-    Es findet <strong>keine Übertragung von Nutzerdaten an Server oder Dritte</strong> statt.
-    Es ist kein Konto erforderlich. Es gibt keine Cloud-Synchronisation.
-  </p>
-
-  <h2>3. Welche Daten werden gespeichert?</h2>
-  <p>Die App speichert ausschließlich Inhalte, die du selbst eingibst:</p>
+  <h2>2. Das Wichtigste in Kürze</h2>
   <ul>
-    <li>Kategorien, Objekte und Felder (deine persönliche Wissensbasis)</li>
-    <li>App-Einstellungen (z. B. Schriftgröße, Erinnerungszeiten)</li>
+    <li>Alles, was du in SOMA einträgst, bleibt auf deinem Gerät. Es gibt keinen Server für deine Daten und kein Konto.</li>
+    <li>Keine Werbung, kein Tracking, keine Analysedienste.</li>
+    <li>Die einzige Verbindung ins Internet ist der Abruf neuer Vorlagen (Abschnitt 6). Dabei wird nichts aus der App übertragen.</li>
+    <li>Sicherungen landen nur dort, wo du sie selbst haben willst: in deinem Google-Konto (Android-Sicherung) oder als verschlüsselte Datei an einem Ort deiner Wahl.</li>
+  </ul>
+
+  <h2>3. Welche Daten verarbeitet die App?</h2>
+  <p>SOMA speichert ausschließlich Inhalte, die du selbst eingibst, lokal im App-Speicher deines Geräts:</p>
+  <ul>
+    <li>Bereiche, Einträge, Angaben, Notizen und Erinnerungen (deine persönliche Wissensbasis)</li>
+    <li>deinen Check-in-Verlauf (an welchen Tagen du Fragen beantwortet hast)</li>
+    <li>Einstellungen, z. B. Sprache, Darstellung, Schriftgröße, Erinnerungszeiten, App-Sperre an oder aus</li>
+    <li>automatische lokale Sicherungen (täglich, die letzten 7 Tage), damit nach einem Fehler nichts verloren geht</li>
   </ul>
   <p>
-    Diese Daten werden im lokalen App-Speicher deines Geräts abgelegt
-    (AsyncStorage / Android App-Daten). Sie verlassen dein Gerät nicht.
+    Diese Daten verlassen dein Gerät nicht, außer über die Sicherungen in Abschnitt 4, die du selbst
+    steuerst. Wir haben keinen Zugriff darauf.
   </p>
 
-  <h2>4. Push-Benachrichtigungen</h2>
+  <h2>4. Sicherungen</h2>
   <p>
-    SOMA kann lokale Push-Benachrichtigungen senden, um dich an offene Felder
-    zu erinnern. Diese Benachrichtigungen werden ausschließlich lokal auf deinem
-    Gerät erzeugt — ohne Verbindung zu einem Notification-Server.
-    Die Nutzung ist freiwillig und jederzeit in den Geräteeinstellungen deaktivierbar.
+    <strong>Android-Sicherung:</strong> Ist auf deinem Gerät die Sicherung in dein Google-Konto
+    eingeschaltet, sichert Android den aktuellen Datenstand von SOMA dort automatisch und stellt ihn auf
+    einem neuen Gerät mit demselben Konto wieder her. Ab Android 9 ist diese Sicherung mit deiner
+    Displaysperre Ende-zu-Ende verschlüsselt. Anbieter ist Google; wir erhalten keine Daten. Du kannst die
+    Sicherung in den Android-Einstellungen abschalten.
   </p>
-
-  <h2>5. Datenweitergabe</h2>
   <p>
-    Es erfolgt <strong>keine Weitergabe</strong> von Daten an Dritte.
-    Die App kommuniziert mit keinen externen Servern, APIs oder Analysediensten.
+    <strong>Sicherungsdatei:</strong> Auf Wunsch erstellt SOMA eine Sicherungsdatei, die mit einem von dir
+    gewählten Passwort verschlüsselt ist (AES-256). Wo du sie speicherst, z. B. in deinem Google Drive,
+    entscheidest du über den Teilen-Dialog. Ohne das Passwort lässt sich die Datei nicht öffnen, auch nicht
+    von uns. Für den gewählten Speicherort gelten dessen Datenschutzbestimmungen.
   </p>
-
-  <h2>6. Tracking und Werbung</h2>
   <p>
-    SOMA enthält keinerlei Tracking, Werbung oder Analysedienste (z. B. kein
-    Google Analytics, kein Firebase Analytics, kein Crashlytics).
+    <strong>JSON-Export:</strong> Auf Wunsch exportiert SOMA deine Daten unverschlüsselt als JSON-Datei,
+    z. B. für andere Programme. Auch hier entscheidest du, wohin die Datei geht.
   </p>
 
-  <h2>7. Datenexport und -löschung</h2>
+  <h2>5. App-Sperre und Fingerabdruck</h2>
   <p>
-    Du kannst deine Daten jederzeit als JSON-Datei exportieren (Einstellungen → Export).
-    Alle Daten werden vollständig gelöscht, wenn du die App deinstallierst oder
-    in den Android-Einstellungen die App-Daten löschst.
+    Schaltest du die App-Sperre ein, prüft Android beim Öffnen deinen Fingerabdruck, dein Gesicht oder
+    die PIN deines Geräts. SOMA erhält dabei keine biometrischen Daten, sondern nur die Antwort, ob die
+    Prüfung erfolgreich war. Passwörter, PINs und ähnliche Angaben zeigt SOMA verdeckt an.
   </p>
 
-  <h2>8. Berechtigungen</h2>
-  <p>Die App benötigt folgende Berechtigungen:</p>
+  <h2>6. Abruf neuer Vorlagen</h2>
+  <p>
+    Damit du neue Vorlagen ohne App-Update erhältst, ruft SOMA höchstens einmal täglich eine
+    Vorlagen-Datei von <code>soma.enton.rocks</code> ab. Dabei werden <strong>keine Daten aus der App
+    übertragen</strong>: keine Einträge, keine Geräte- oder Nutzerkennung. Technisch bedingt wird die
+    IP-Adresse deines Geräts verarbeitet, um die Datei auszuliefern.
+  </p>
   <ul>
-    <li><strong>Benachrichtigungen</strong> — für lokale Erinnerungen (optional)</li>
+    <li>
+      <strong>Hosting:</strong> Hetzner Online GmbH, Industriestr. 25, 91710 Gunzenhausen, Deutschland
+      (Rechenzentrum in Finnland). Mit Hetzner besteht ein Vertrag zur Auftragsverarbeitung nach
+      Art. 28 DSGVO. Auf dem Server werden keine Zugriffsprotokolle gespeichert.
+    </li>
+    <li>
+      <strong>Auslieferung und Schutz vor Angriffen:</strong> Cloudflare, Inc., 101 Townsend St,
+      San Francisco, CA 94107, USA. Cloudflare verarbeitet die IP-Adresse als Auftragsverarbeiter und ist
+      unter dem EU-US Data Privacy Framework zertifiziert (Angemessenheitsbeschluss, Art. 45 DSGVO).
+    </li>
   </ul>
-  <p>Es werden keine weiteren Berechtigungen angefordert.</p>
-
-  <h2>9. Änderungen dieser Datenschutzerklärung</h2>
   <p>
-    Änderungen werden auf dieser Seite veröffentlicht. Da keine personenbezogenen
-    Daten erhoben werden, entstehen dir durch Änderungen keine Nachteile.
+    Rechtsgrundlage ist unser berechtigtes Interesse an der Bereitstellung aktueller Vorlagen
+    (Art. 6 Abs. 1 lit. f DSGVO). Ohne Internetverbindung nutzt SOMA die eingebauten Vorlagen.
   </p>
 
-  <h2>10. Kontakt</h2>
+  <h2>7. Benachrichtigungen</h2>
   <p>
-    Bei Fragen zum Datenschutz erreichst du mich unter:<br />
-    enrico.czepan@gmail.com
+    Erinnerungen an Fristen und an den Check-in erzeugt SOMA lokal auf deinem Gerät, ohne
+    Benachrichtigungs-Server. Sie enthalten den Namen des Eintrags, der Angabe und das Datum.
+    Die Nutzung ist freiwillig und jederzeit in den Android-Einstellungen abschaltbar.
   </p>
+
+  <h2>8. Keine Werbung, kein Tracking</h2>
+  <p>
+    SOMA enthält keine Werbung, kein Tracking und keine Analysedienste (z. B. kein Google Analytics,
+    kein Firebase Analytics, kein Crashlytics). Daten werden nicht an Dritte weitergegeben oder verkauft.
+    Hast du in Android zugestimmt, Diagnosedaten mit Google zu teilen, stellt Google Play uns
+    zusammengefasste Absturzberichte ohne Personenbezug bereit; Anbieter dieser Funktion ist Google.
+  </p>
+
+  <h2>9. Berechtigungen</h2>
+  <ul>
+    <li><strong>Benachrichtigungen</strong> und <strong>Start nach dem Neustart</strong>: für Erinnerungen (optional)</li>
+    <li><strong>Internet</strong>: nur für den Abruf neuer Vorlagen (Abschnitt 6)</li>
+    <li><strong>Biometrie</strong>: nur für die App-Sperre, wenn du sie einschaltest (Abschnitt 5)</li>
+    <li><strong>Vibration</strong>: für kurze Rückmeldungen beim Tippen</li>
+  </ul>
+  <p>SOMA greift nicht auf Standort, Kamera, Mikrofon, Kontakte oder deine Dateien zu, außer auf eine Datei, die du beim Einlesen einer Sicherung selbst auswählst.</p>
+
+  <h2>10. Löschung</h2>
+  <p>
+    In den Einstellungen löscht „Alle Daten löschen“ alle Inhalte einschließlich der lokalen Sicherungen.
+    Beim Deinstallieren der App oder beim Löschen der App-Daten in Android werden ebenfalls alle Daten
+    auf dem Gerät entfernt. Sicherungen in deinem Google-Konto oder Sicherungsdateien an anderen Orten
+    löschst du dort selbst.
+  </p>
+
+  <h2>11. Deine Rechte</h2>
+  <p>
+    Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Widerspruch
+    (Art. 15 bis 21 DSGVO) sowie das Recht auf Beschwerde bei einer Datenschutz-Aufsichtsbehörde (Art. 77 DSGVO).
+    Da wir außer der kurzzeitigen Verarbeitung der IP-Adresse beim Vorlagen-Abruf keine Daten von dir
+    verarbeiten, gibt es bei uns in der Regel nichts zu beauskunften. Melde dich gern bei Fragen.
+  </p>
+
+  <h2>12. Altersgruppe</h2>
+  <p>SOMA richtet sich an Personen ab 16 Jahren.</p>
+
+  <h2>13. Änderungen</h2>
+  <p>Ändert sich etwas an der Datenverarbeitung, aktualisieren wir diese Seite und das Datum oben.</p>
+
+  <hr />
+
+  <h1 id="en">Privacy Policy</h1>
+  <p class="muted">SOMA app · Last updated: October 30, 2026</p>
+
+  <h2>1. Controller</h2>
+  <p>
+    epicrisc, represented by Enrico Czepan<br />
+    c/o Online-Impressum 12411<br />
+    Europaring 90<br />
+    53757 Sankt Augustin, Germany<br />
+    Email: <a href="mailto:enrico.czepan@gmail.com">enrico.czepan@gmail.com</a><br />
+    Legal notice: <a href="https://mein.online-impressum.de/epicrisc/">mein.online-impressum.de/epicrisc</a>
+  </p>
+
+  <h2>2. In short</h2>
+  <ul>
+    <li>Everything you enter in SOMA stays on your device. There is no server for your data and no account.</li>
+    <li>No ads, no tracking, no analytics.</li>
+    <li>The only internet connection is downloading new templates (section 6). Nothing from the app is sent.</li>
+    <li>Backups only go where you want them: your Google account (Android backup) or an encrypted file in a place you choose.</li>
+  </ul>
+
+  <h2>3. What data does the app process?</h2>
+  <p>SOMA only stores content you enter yourself, locally in your device's app storage:</p>
+  <ul>
+    <li>areas, entries, details, notes and reminders (your personal knowledge base)</li>
+    <li>your check-in history (on which days you answered questions)</li>
+    <li>settings such as language, appearance, text size, reminder times, app lock on or off</li>
+    <li>automatic local backups (daily, last 7 days) so nothing is lost after an error</li>
+  </ul>
+  <p>This data does not leave your device except through the backups in section 4, which you control. We have no access to it.</p>
+
+  <h2>4. Backups</h2>
+  <p>
+    <strong>Android backup:</strong> If backup to your Google account is turned on, Android automatically
+    backs up SOMA's current data there and restores it on a new device with the same account. Since Android 9
+    this backup is end-to-end encrypted with your screen lock. The provider is Google; we receive no data.
+    You can turn it off in Android settings.
+  </p>
+  <p>
+    <strong>Backup file:</strong> On request, SOMA creates a backup file encrypted with a password you choose
+    (AES-256). You decide where to save it, for example in your Google Drive, via the share dialog. Without the
+    password the file cannot be opened, not even by us. The privacy terms of the storage you choose apply.
+  </p>
+  <p><strong>JSON export:</strong> On request, SOMA exports your data unencrypted as a JSON file. You decide where it goes.</p>
+
+  <h2>5. App lock and fingerprint</h2>
+  <p>
+    If you turn on the app lock, Android checks your fingerprint, face or device PIN when you open SOMA.
+    SOMA receives no biometric data, only whether the check succeeded. Passwords, PINs and similar details are shown hidden.
+  </p>
+
+  <h2>6. Downloading new templates</h2>
+  <p>
+    To get new templates without an app update, SOMA downloads a template file from <code>soma.enton.rocks</code>
+    at most once a day. <strong>No data from the app is sent</strong>: no entries, no device or user ID. For technical
+    reasons, your device's IP address is processed to deliver the file.
+  </p>
+  <ul>
+    <li><strong>Hosting:</strong> Hetzner Online GmbH, Industriestr. 25, 91710 Gunzenhausen, Germany (data center in Finland), under a data processing agreement (Art. 28 GDPR). No access logs are stored on the server.</li>
+    <li><strong>Delivery and attack protection:</strong> Cloudflare, Inc., 101 Townsend St, San Francisco, CA 94107, USA, as a processor, certified under the EU-US Data Privacy Framework (adequacy decision, Art. 45 GDPR).</li>
+  </ul>
+  <p>Legal basis is our legitimate interest in providing current templates (Art. 6(1)(f) GDPR). Without internet, SOMA uses its built-in templates.</p>
+
+  <h2>7. Notifications</h2>
+  <p>Reminders for due dates and the check-in are created locally on your device, without a notification server. They contain the entry name, the detail and the date. They are optional and can be turned off in Android settings at any time.</p>
+
+  <h2>8. No ads, no tracking</h2>
+  <p>
+    SOMA contains no ads, no tracking and no analytics (e.g. no Google Analytics, Firebase Analytics or Crashlytics).
+    Data is not shared with or sold to third parties. If you agreed in Android to share diagnostics with Google,
+    Google Play provides us with aggregated crash reports without personal reference; Google provides this feature.
+  </p>
+
+  <h2>9. Permissions</h2>
+  <ul>
+    <li><strong>Notifications</strong> and <strong>run at startup</strong>: for reminders (optional)</li>
+    <li><strong>Internet</strong>: only for downloading new templates (section 6)</li>
+    <li><strong>Biometrics</strong>: only for the app lock, if you turn it on (section 5)</li>
+    <li><strong>Vibration</strong>: for short haptic feedback</li>
+  </ul>
+  <p>SOMA does not access your location, camera, microphone, contacts or files, except a file you pick yourself when restoring a backup.</p>
+
+  <h2>10. Deletion</h2>
+  <p>In settings, “Delete all data” removes all content including local backups. Uninstalling the app or clearing its data in Android also removes all data on the device. Backups in your Google account or backup files elsewhere are deleted there by you.</p>
+
+  <h2>11. Your rights</h2>
+  <p>You have the right to access, rectification, erasure, restriction and objection (Art. 15 to 21 GDPR) and to lodge a complaint with a data protection authority (Art. 77 GDPR). Apart from briefly processing the IP address when templates are downloaded, we process no data about you. Feel free to contact us with questions.</p>
+
+  <h2>12. Age group</h2>
+  <p>SOMA is intended for people aged 16 and over.</p>
+
+  <h2>13. Changes</h2>
+  <p>If data processing changes, we update this page and the date above.</p>
 
 </body>
 </html>
